@@ -1,0 +1,37 @@
+{
+  "name": "react-native-message-ui",
+  "version": "1.0",
+  "description": "React Native Native Message UI",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ModusCreateOrg/RCTMessageUI"
+  },
+  "main": "index.js",
+  "keywords": [
+    "react-native",
+    "react-native-message-call",
+    "react-components",
+    "react-component",
+    "ios",
+    "android",
+    "flux",
+    "router",
+    "message"
+  ],
+  "author": {
+    "name": "Dorin Danciu",
+    "email": "dorin.danciu@moduscreate.com",
+    "url": "http://moduscreate.com"
+  },
+  "license": "ISC",
+  "maintainers": [
+    {
+      "name": "dorin-BSFT",
+      "email": "dorin.danciu@moduscreate.com"
+    },
+    {
+      "name": "alextkd",
+      "email": "alextkd123@yahoo.com"
+    }
+  ]
+}
