@@ -1,10 +1,13 @@
 'use strict';
 
-var RCTMessageUIManager = require('NativeModules').MessageUIManager;
-var invariant = require('fbjs/lib/invariant');
-var processColor = require('processColor');
+let RCTMessageUIManager = require('NativeModules').MessageUIManager;
+let invariant = require('fbjs/lib/invariant');
+let processColor = require('processColor');
 
-var MessageUI = {
+/**
+* MessageUI class to handle native message intialization
+*/
+export default class MessageUI {
     /**
      * Returns YES if the device can send text messages or NO if it cannot.
      */
@@ -115,6 +118,4 @@ var MessageUI = {
         );
     }
 
-};
-
-module.exports = MessageUI;
+}
