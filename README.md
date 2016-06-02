@@ -31,7 +31,7 @@ handle iOS and Android libraries for you and it's pretty straight forward
 
 $npm install rnpm -g
 
-$rnpm link`
+$rnpm link
 
 ```
 
