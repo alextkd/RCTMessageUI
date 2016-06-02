@@ -32,20 +32,20 @@ handle iOS and Android libraries for you and it's pretty straight forward
 rnpm link will link all dependencies automatically but you will still need to re-build the native app
 
 ###Usage
-!important: it will not work in the iOS Simulator, works only on real device
+!!! important: it will not work in the iOS Simulator, works only on real device
 
 
-`import {MessageUI} from ‘RCTMessageUI';
+`import {MessageUI} from 'RCTMessageUI';
 
 MessageUI.showMessageComposeWithOptions(
-      {
-        body: 'Ana are mere',
-        recipients: ['11211241', 'b@bb.bbb'],
-        disableUserAttachments: true
-      }, (error, messageComposeResult) => {
-      if (error) {
-        console.error(error);
-      } else {
-        alert('mailComposeResult : ' + messageComposeResult);
-      }
-    });`
+            {
+                body                   : 'Ana are mere',
+                recipients             : ['11211241', 'b@bb.bbb'],
+                disableUserAttachments : true
+            }, (error, messageComposeResult) => {
+                if (error) {
+                    console.error(error);
+                } else {
+                    alert('mailComposeResult : ' + messageComposeResult);
+                }
+            });`
