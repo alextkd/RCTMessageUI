@@ -22,7 +22,7 @@ let MessageUI = {
             'Must provide a valid callback'
         );
         RCTMessageUIManager.canSendText(callback);
-    }
+    },
 
     /**
      * Returns YES if the device can send attachments in MMS or iMessage messages, or NO otherwise.
@@ -33,7 +33,7 @@ let MessageUI = {
             'Must provide a valid callback'
         );
         RCTMessageUIManager.canSendAttachments(callback);
-    }
+    },
 
     /**
      * Returns YES if the device can include subject lines in messages, or NO otherwise.
@@ -44,7 +44,7 @@ let MessageUI = {
             'Must provide a valid callback'
         );
         RCTMessageUIManager.canSendSubject(callback);
-    }
+    },
 
     /**
      * Returns YES if a file with the specified UTI can be attached to the message, or NO otherwise.
@@ -60,7 +60,7 @@ let MessageUI = {
             'Must provide a valid callback'
         );
         RCTMessageUIManager.isSupportedAttachmentUTI(uti, callback);
-    }
+    },
 
     /**
      * Returns YES if the user has set up the device for sending email, or NO otherwise.
@@ -71,7 +71,7 @@ let MessageUI = {
             'Must provide a valid callback'
         );
         RCTMessageUIManager.canSendMail(callback);
-    }
+    },
 
     /**
      * Display an iOS message composer. The `options` object must contain one or more
@@ -95,7 +95,7 @@ let MessageUI = {
             },
             callback
         );
-    }
+    },
 
     /**
      * Display an iOS mail composer. The `options` object must contain one or more
