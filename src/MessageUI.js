@@ -1,13 +1,18 @@
 'use strict';
 
-let RCTMessageUIManager = require('NativeModules').MessageUIManager;
-let invariant = require('fbjs/lib/invariant');
-let processColor = require('processColor');
+import invariant from 'fbjs/lib/invariant';
+
+import {
+    NativeModules,
+    processColor
+} from './react-native';
+
+let RCTMessageUIManager = NativeModules.MessageUIManager;
 
 /**
 * MessageUI class to handle native message intialization
 */
-export default class MessageUI {
+let MessageUI = {
     /**
      * Returns YES if the device can send text messages or NO if it cannot.
      */
@@ -93,7 +98,7 @@ export default class MessageUI {
     },
 
     /**
-     * Display an iOS action sheet. The `options` object must contain one or more
+     * Display an iOS mail composer. The `options` object must contain one or more
      * of:
      *
      * - `subject` (string) - mail subject
@@ -118,4 +123,5 @@ export default class MessageUI {
         );
     }
 
-}
+};
+export default MessageUI;

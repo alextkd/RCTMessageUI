@@ -1,5 +1,5 @@
 import MessageUI from './src/MessageUI';
 
 export {
-  MessageUI
-};
+    MessageUI
+}
