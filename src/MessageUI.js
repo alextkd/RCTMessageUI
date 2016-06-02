@@ -5,7 +5,7 @@ import invariant from 'fbjs/lib/invariant';
 import {
     NativeModules,
     processColor
-} from './react-native';
+} from 'react-native';
 
 let RCTMessageUIManager = NativeModules.MessageUIManager;
 
