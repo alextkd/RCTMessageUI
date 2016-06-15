@@ -10,6 +10,9 @@
   "keywords": [
     "react-native",
     "react-native-message-call",
+    "react-native-sms",
+    "react-native-email",
+    "react-native-email-composer",
     "react-components",
     "react-component",
     "ios",
@@ -19,12 +22,12 @@
     "message"
   ],
   "author": {
-    "name": "Dorin Danciu",
+    "name": "Dorin Danciu & Alex Lazar",
     "email": "dorin.danciu@moduscreate.com",
     "url": "http://moduscreate.com"
   },
   "license": "ISC",
-  "maintainers": [
+  "contributors": [
     {
       "name": "dorin-BSFT",
       "email": "dorin.danciu@moduscreate.com"
