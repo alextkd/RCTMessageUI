@@ -247,6 +247,9 @@ RCT_EXPORT_METHOD(showEmailComposeWithOptions:(NSDictionary *)options
                  didFinishWithResult:(MessageComposeResult)result
 {
     RCTResponseSenderBlock callback = [self.callbacks objectForKey:controller];
+
+    [controller dismissViewControllerAnimated:YES completion:nil];
+
     if (callback) {
         callback(@[[NSNull null],@(result)]);
         [self.callbacks removeObjectForKey:controller];
@@ -262,6 +265,9 @@ RCT_EXPORT_METHOD(showEmailComposeWithOptions:(NSDictionary *)options
                         error:(nullable NSError *)error
 {
     RCTResponseSenderBlock callback = [self.callbacks objectForKey:controller];
+
+    [controller dismissViewControllerAnimated:YES completion:nil];
+
     if (callback) {
         callback(@[error ? error.localizedDescription : [NSNull null], @(result)]);
         [self.callbacks removeObjectForKey:controller];
